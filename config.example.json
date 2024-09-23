@@ -1,20 +1,20 @@
 {
     "wallet": {
         "addressKeyName": "test",
-        "addressRestoreMnemonic": "",
+        "addressRestoreMnemonic": "just clap slim ...",
         "alloraHomeDir": "",
         "gas": "auto",
         "gasAdjustment": 1.5,
-        "nodeRpc": "https://allora-rpc.testnet.allora.network",
+        "nodeRpc": "https://allora-testnet-rpc.itrocket.net",
         "maxRetries": 1,
-        "delay": 1,
+        "delay": 5,
         "submitTx": true
     },
     "worker": [
         {
-            "topicId": 1,
+            "topicId": 7,
             "inferenceEntrypointName": "api-worker-reputer",
-            "loopSeconds": 5,
+            "loopSeconds": 15,
             "parameters": {
                 "InferenceEndpoint": "http://inference:8000/inference/{Token}",
                 "Token": "ETH"
