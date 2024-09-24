@@ -17,7 +17,7 @@
             "loopSeconds": 15,
             "parameters": {
                 "InferenceEndpoint": "http://inference:8001/inference/{Token}",
-                "Token": "ETH"
+                "Token": "BNB"
             }
         }
     ]
