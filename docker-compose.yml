@@ -16,7 +16,7 @@ services:
       - ./inference-data:/app/data
   
   updater:
-    container_name: updater
+    container_name: updater-bnb
     build: .
     environment:
       - INFERENCE_API_ADDRESS=http://inference:8001
