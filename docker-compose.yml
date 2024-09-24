@@ -1,14 +1,14 @@
 services:
   inference:
-    container_name: inference
+    container_name: inference-bnb
     env_file:
       - .env
     build: .
     command: python -u /app/app.py
     ports:
-      - "8000:8000"
+      - "8001:8001"
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://inference:8000/inference/${TOKEN}"]
+      test: ["CMD", "curl", "-f", "http://inference:8001/inference/${TOKEN}"]
       interval: 10s
       timeout: 5s
       retries: 12
@@ -19,7 +19,7 @@ services:
     container_name: updater
     build: .
     environment:
-      - INFERENCE_API_ADDRESS=http://inference:8000
+      - INFERENCE_API_ADDRESS=http://inference:8001
     command: >
       sh -c "
       while true; do
@@ -32,7 +32,7 @@ services:
         condition: service_healthy
 
   worker:
-    container_name: worker
+    container_name: worker-bnb
     image: alloranetwork/allora-offchain-node:v0.4.0
     volumes:
       - ./worker-data:/data
