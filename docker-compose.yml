@@ -31,30 +31,14 @@ services:
       inference:
         condition: service_healthy
 
-  updater:
-    container_name: updater-eth
-    build: .
-    environment:
-      - INFERENCE_API_ADDRESS=http://inference:8000
-    command: >
-      sh -c "
-      while true; do
-        python -u /app/update_app.py;
-        sleep 24h;
-      done
-      "
-    depends_on:
-      inference:
-        condition: service_healthy
 
-  worker_1:
+    worker_1:
     container_name: worker-new-1
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data1:/data
     depends_on:
       - inference
-        condition: service_healthy
     env_file:
       - ./worker-data1/env_file
 
@@ -65,7 +49,7 @@ services:
       - ./worker-data2:/data
     depends_on:
       - inference
-        condition: service_healthy      
+      
     env_file:
       - ./worker-data2/env_file
 
@@ -76,7 +60,7 @@ services:
       - ./worker-data3:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data3/env_file
 
@@ -87,7 +71,7 @@ services:
       - ./worker-data4:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data4/env_file
 
@@ -98,7 +82,7 @@ services:
       - ./worker-data5:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data5/env_file
 
@@ -109,7 +93,7 @@ services:
       - ./worker-data6:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data6/env_file
 
@@ -120,7 +104,7 @@ services:
       - ./worker-data7:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data7/env_file
 
@@ -131,7 +115,7 @@ services:
       - ./worker-data8:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data8/env_file
 
@@ -142,7 +126,7 @@ services:
       - ./worker-data9:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data9/env_file
 
@@ -153,7 +137,7 @@ services:
       - ./worker-data10:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data10/env_file
 
@@ -164,7 +148,7 @@ services:
       - ./worker-data11:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data11/env_file
 
@@ -175,7 +159,7 @@ services:
       - ./worker-data12:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data12/env_file
 
@@ -186,7 +170,7 @@ services:
       - ./worker-data13:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data13/env_file
 
@@ -197,7 +181,7 @@ services:
       - ./worker-data14:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data14/env_file
 
@@ -208,7 +192,7 @@ services:
       - ./worker-data15:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data15/env_file
 
@@ -219,7 +203,7 @@ services:
       - ./worker-data16:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data16/env_file
 
@@ -230,7 +214,7 @@ services:
       - ./worker-data17:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data17/env_file
 
@@ -241,7 +225,7 @@ services:
       - ./worker-data18:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data18/env_file
 
@@ -252,7 +236,7 @@ services:
       - ./worker-data19:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data19/env_file
 
@@ -263,7 +247,7 @@ services:
       - ./worker-data20:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data20/env_file
 
@@ -274,7 +258,7 @@ services:
       - ./worker-data21:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data21/env_file
 
@@ -285,7 +269,7 @@ services:
       - ./worker-data22:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data22/env_file
 
@@ -296,7 +280,7 @@ services:
       - ./worker-data23:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data23/env_file
 
@@ -307,7 +291,7 @@ services:
       - ./worker-data24:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data24/env_file
 
@@ -318,7 +302,7 @@ services:
       - ./worker-data25:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data25/env_file
 
@@ -329,7 +313,7 @@ services:
       - ./worker-data26:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data26/env_file
 
@@ -340,7 +324,7 @@ services:
       - ./worker-data27:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data27/env_file
 
@@ -351,7 +335,7 @@ services:
       - ./worker-data28:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data28/env_file
 
@@ -362,7 +346,7 @@ services:
       - ./worker-data29:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data29/env_file
 
@@ -373,7 +357,7 @@ services:
       - ./worker-data30:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data30/env_file
 
@@ -384,7 +368,7 @@ services:
       - ./worker-data31:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data31/env_file
 
@@ -395,7 +379,7 @@ services:
       - ./worker-data32:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data32/env_file
 
@@ -406,7 +390,7 @@ services:
       - ./worker-data33:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data33/env_file
 
@@ -417,7 +401,7 @@ services:
       - ./worker-data34:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data34/env_file
 
@@ -428,7 +412,7 @@ services:
       - ./worker-data35:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data35/env_file
 
@@ -439,7 +423,7 @@ services:
       - ./worker-data36:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data36/env_file
 
@@ -450,7 +434,7 @@ services:
       - ./worker-data37:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data37/env_file
 
@@ -461,7 +445,7 @@ services:
       - ./worker-data38:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data38/env_file
 
@@ -472,7 +456,7 @@ services:
       - ./worker-data39:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data39/env_file
 
@@ -483,7 +467,7 @@ services:
       - ./worker-data40:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data40/env_file
 
@@ -494,7 +478,7 @@ services:
       - ./worker-data41:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data41/env_file
 
@@ -505,7 +489,7 @@ services:
       - ./worker-data42:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data42/env_file
 
@@ -516,7 +500,7 @@ services:
       - ./worker-data43:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data43/env_file
 
@@ -527,7 +511,7 @@ services:
       - ./worker-data44:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data44/env_file
 
@@ -538,7 +522,7 @@ services:
       - ./worker-data45:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data45/env_file
 
@@ -549,7 +533,7 @@ services:
       - ./worker-data46:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data46/env_file
 
@@ -560,7 +544,7 @@ services:
       - ./worker-data47:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data47/env_file
 
@@ -571,7 +555,7 @@ services:
       - ./worker-data48:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data48/env_file
 
@@ -582,7 +566,7 @@ services:
       - ./worker-data49:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data49/env_file
 
@@ -593,7 +577,7 @@ services:
       - ./worker-data50:/data
     depends_on:
       - inference
-        condition: service_healthy
+
     env_file:
       - ./worker-data50/env_file
 
