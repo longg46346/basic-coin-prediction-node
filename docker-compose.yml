@@ -33,7 +33,7 @@ services:
 
 
     worker_1:
-    container_name: worker-new-1
+    container_name: worker-bnb-1
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data1:/data
@@ -43,7 +43,7 @@ services:
       - ./worker-data1/env_file
 
   worker_2:
-    container_name: worker-new-2
+    container_name: worker-bnb-2
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data2:/data
@@ -54,7 +54,7 @@ services:
       - ./worker-data2/env_file
 
   worker_3:
-    container_name: worker-new-3
+    container_name: worker-bnb-3
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data3:/data
@@ -65,7 +65,7 @@ services:
       - ./worker-data3/env_file
 
   worker_4:
-    container_name: worker-new-4
+    container_name: worker-bnb-4
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data4:/data
@@ -76,7 +76,7 @@ services:
       - ./worker-data4/env_file
 
   worker_5:
-    container_name: worker-new-5
+    container_name: worker-bnb-5
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data5:/data
@@ -87,7 +87,7 @@ services:
       - ./worker-data5/env_file
 
   worker_6:
-    container_name: worker-new-6
+    container_name: worker-bnb-6
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data6:/data
@@ -98,7 +98,7 @@ services:
       - ./worker-data6/env_file
 
   worker_7:
-    container_name: worker-new-7
+    container_name: worker-bnb-7
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data7:/data
@@ -109,7 +109,7 @@ services:
       - ./worker-data7/env_file
 
   worker_8:
-    container_name: worker-new-8
+    container_name: worker-bnb-8
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data8:/data
@@ -120,7 +120,7 @@ services:
       - ./worker-data8/env_file
 
   worker_9:
-    container_name: worker-new-9
+    container_name: worker-bnb-9
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data9:/data
@@ -131,7 +131,7 @@ services:
       - ./worker-data9/env_file
 
   worker_10:
-    container_name: worker-new-10
+    container_name: worker-bnb-10
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data10:/data
@@ -142,7 +142,7 @@ services:
       - ./worker-data10/env_file
 
   worker_11:
-    container_name: worker-new-11
+    container_name: worker-bnb-11
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data11:/data
@@ -153,7 +153,7 @@ services:
       - ./worker-data11/env_file
 
   worker_12:
-    container_name: worker-new-12
+    container_name: worker-bnb-12
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data12:/data
@@ -164,7 +164,7 @@ services:
       - ./worker-data12/env_file
 
   worker_13:
-    container_name: worker-new-13
+    container_name: worker-bnb-13
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data13:/data
@@ -175,7 +175,7 @@ services:
       - ./worker-data13/env_file
 
   worker_14:
-    container_name: worker-new-14
+    container_name: worker-bnb-14
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data14:/data
@@ -186,7 +186,7 @@ services:
       - ./worker-data14/env_file
 
   worker_15:
-    container_name: worker-new-15
+    container_name: worker-bnb-15
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data15:/data
@@ -197,7 +197,7 @@ services:
       - ./worker-data15/env_file
 
   worker_16:
-    container_name: worker-new-16
+    container_name: worker-bnb-16
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data16:/data
@@ -208,7 +208,7 @@ services:
       - ./worker-data16/env_file
 
   worker_17:
-    container_name: worker-new-17
+    container_name: worker-bnb-17
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data17:/data
@@ -219,7 +219,7 @@ services:
       - ./worker-data17/env_file
 
   worker_18:
-    container_name: worker-new-18
+    container_name: worker-bnb-18
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data18:/data
@@ -230,7 +230,7 @@ services:
       - ./worker-data18/env_file
 
   worker_19:
-    container_name: worker-new-19
+    container_name: worker-bnb-19
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data19:/data
@@ -241,7 +241,7 @@ services:
       - ./worker-data19/env_file
 
   worker_20:
-    container_name: worker-new-20
+    container_name: worker-bnb-20
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data20:/data
@@ -252,7 +252,7 @@ services:
       - ./worker-data20/env_file
 
   worker_21:
-    container_name: worker-new-21
+    container_name: worker-bnb-21
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data21:/data
@@ -263,7 +263,7 @@ services:
       - ./worker-data21/env_file
 
   worker_22:
-    container_name: worker-new-22
+    container_name: worker-bnb-22
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data22:/data
@@ -274,7 +274,7 @@ services:
       - ./worker-data22/env_file
 
   worker_23:
-    container_name: worker-new-23
+    container_name: worker-bnb-23
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data23:/data
@@ -285,7 +285,7 @@ services:
       - ./worker-data23/env_file
 
   worker_24:
-    container_name: worker-new-24
+    container_name: worker-bnb-24
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data24:/data
@@ -296,7 +296,7 @@ services:
       - ./worker-data24/env_file
 
   worker_25:
-    container_name: worker-new-25
+    container_name: worker-bnb-25
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data25:/data
@@ -307,7 +307,7 @@ services:
       - ./worker-data25/env_file
 
   worker_26:
-    container_name: worker-new-26
+    container_name: worker-bnb-26
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data26:/data
@@ -318,7 +318,7 @@ services:
       - ./worker-data26/env_file
 
   worker_27:
-    container_name: worker-new-27
+    container_name: worker-bnb-27
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data27:/data
@@ -329,7 +329,7 @@ services:
       - ./worker-data27/env_file
 
   worker_28:
-    container_name: worker-new-28
+    container_name: worker-bnb-28
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data28:/data
@@ -340,7 +340,7 @@ services:
       - ./worker-data28/env_file
 
   worker_29:
-    container_name: worker-new-29
+    container_name: worker-bnb-29
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data29:/data
@@ -351,7 +351,7 @@ services:
       - ./worker-data29/env_file
 
   worker_30:
-    container_name: worker-new-30
+    container_name: worker-bnb-30
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data30:/data
@@ -362,7 +362,7 @@ services:
       - ./worker-data30/env_file
 
   worker_31:
-    container_name: worker-new-31
+    container_name: worker-bnb-31
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data31:/data
@@ -373,7 +373,7 @@ services:
       - ./worker-data31/env_file
 
   worker_32:
-    container_name: worker-new-32
+    container_name: worker-bnb-32
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data32:/data
@@ -384,7 +384,7 @@ services:
       - ./worker-data32/env_file
 
   worker_33:
-    container_name: worker-new-33
+    container_name: worker-bnb-33
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data33:/data
@@ -395,7 +395,7 @@ services:
       - ./worker-data33/env_file
 
   worker_34:
-    container_name: worker-new-34
+    container_name: worker-bnb-34
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data34:/data
@@ -406,7 +406,7 @@ services:
       - ./worker-data34/env_file
 
   worker_35:
-    container_name: worker-new-35
+    container_name: worker-bnb-35
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data35:/data
@@ -417,7 +417,7 @@ services:
       - ./worker-data35/env_file
 
   worker_36:
-    container_name: worker-new-36
+    container_name: worker-bnb-36
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data36:/data
@@ -428,7 +428,7 @@ services:
       - ./worker-data36/env_file
 
   worker_37:
-    container_name: worker-new-37
+    container_name: worker-bnb-37
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data37:/data
@@ -439,7 +439,7 @@ services:
       - ./worker-data37/env_file
 
   worker_38:
-    container_name: worker-new-38
+    container_name: worker-bnb-38
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data38:/data
@@ -450,7 +450,7 @@ services:
       - ./worker-data38/env_file
 
   worker_39:
-    container_name: worker-new-39
+    container_name: worker-bnb-39
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data39:/data
@@ -461,7 +461,7 @@ services:
       - ./worker-data39/env_file
 
   worker_40:
-    container_name: worker-new-40
+    container_name: worker-bnb-40
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data40:/data
@@ -472,7 +472,7 @@ services:
       - ./worker-data40/env_file
 
   worker_41:
-    container_name: worker-new-41
+    container_name: worker-bnb-41
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data41:/data
@@ -483,7 +483,7 @@ services:
       - ./worker-data41/env_file
 
   worker_42:
-    container_name: worker-new-42
+    container_name: worker-bnb-42
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data42:/data
@@ -494,7 +494,7 @@ services:
       - ./worker-data42/env_file
 
   worker_43:
-    container_name: worker-new-43
+    container_name: worker-bnb-43
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data43:/data
@@ -505,7 +505,7 @@ services:
       - ./worker-data43/env_file
 
   worker_44:
-    container_name: worker-new-44
+    container_name: worker-bnb-44
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data44:/data
@@ -516,7 +516,7 @@ services:
       - ./worker-data44/env_file
 
   worker_45:
-    container_name: worker-new-45
+    container_name: worker-bnb-45
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data45:/data
@@ -527,7 +527,7 @@ services:
       - ./worker-data45/env_file
 
   worker_46:
-    container_name: worker-new-46
+    container_name: worker-bnb-46
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data46:/data
@@ -538,7 +538,7 @@ services:
       - ./worker-data46/env_file
 
   worker_47:
-    container_name: worker-new-47
+    container_name: worker-bnb-47
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data47:/data
@@ -549,7 +549,7 @@ services:
       - ./worker-data47/env_file
 
   worker_48:
-    container_name: worker-new-48
+    container_name: worker-bnb-48
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data48:/data
@@ -560,7 +560,7 @@ services:
       - ./worker-data48/env_file
 
   worker_49:
-    container_name: worker-new-49
+    container_name: worker-bnb-49
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data49:/data
@@ -571,7 +571,7 @@ services:
       - ./worker-data49/env_file
 
   worker_50:
-    container_name: worker-new-50
+    container_name: worker-bnb-50
     image: alloranetwork/allora-offchain-node:latest
     volumes:
       - ./worker-data50:/data
