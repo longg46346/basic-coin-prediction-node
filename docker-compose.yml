@@ -32,7 +32,7 @@ services:
         condition: service_healthy
 
 
-    worker_1:
+  worker_1:
     container_name: worker-bnb-1
     image: alloranetwork/allora-offchain-node:latest
     volumes:
